@@ -7,7 +7,7 @@ class Questions
 
   def question(name) 
     puts "#{name}: What does #{@num1} plus #{@num2} equal?"
-    self
+    #self
     #the methods only puts the question, it doesn't return anything. So need to use "self" to return a reference to the instance itself
   end
 
