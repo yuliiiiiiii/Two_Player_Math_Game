@@ -1,9 +1,10 @@
 class Player
-  def initalize(name)
+  def initialize(name)
     @name = name
     @lives = 3
   end
- 
+  
+  attr_accessor :name, :lives
 
   def reduce_lives
     @lives -= 1
@@ -18,7 +19,7 @@ class Player
     current_question = create_question.question(name)
     print ">"
     input = $stdin.gets.chomp.to_i
-    if current_question.answer(input)
+    if create_question.answer(input)
       puts "Yes! You are correct."
     else 
       puts "Seriously? No!"

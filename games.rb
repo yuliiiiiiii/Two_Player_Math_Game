@@ -1,5 +1,5 @@
 class Games
-  def initalize(name)
+  def initialize(name)
    @name = name
    @player_1 = Player.new("Player 1")
    @player_2 = Player.new("Player 2")
@@ -7,6 +7,7 @@ class Games
 
   def start
     puts "Game starts! Welcome #{@player_1.name} and #{@player_2.name}"
+    
     turn #the function to start new turn
   end
 
